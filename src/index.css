@@ -1,0 +1,52 @@
+@font-face{
+    font-family: robotocondensed;
+    src:url(assets/roboto-condensed.light.ttf);
+    font-weight: 300
+}
+
+@font-face{
+    font-family: economicabold;
+    src:url(assets/economica-bold.ttf);
+}
+
+body{
+    text-align: center;
+    font-size: 20px;
+    padding: 2.5%;
+    font-family: 'robotocondensed'
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'economicabold';
+
+}
+p{
+    font-size:18px;
+}
+.profile
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.title-fade-out{
+    opacity: 0;
+    animation-name: fade-out;
+    animation-duration: 2s;
+}
+.title-fade-in{
+    opacity: 100;
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+@keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 100;}
+}
+
+@keyframes fade-out{
+from{opacity: 100;}
+to{opacity: 0;}
+}
